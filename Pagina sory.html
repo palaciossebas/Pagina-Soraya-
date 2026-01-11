@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso Gemini IA | Proyecto Académico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --primary:#5ecbff;
+            --secondary:#0072ff;
+        }
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{
+            background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+            color:#fff;overflow-x:hidden
+        }
+        nav{
+            position:fixed;top:0;width:100%;z-index:1000;
+            display:flex;justify-content:space-between;align-items:center;
+            padding:15px 8%;background:rgba(0,0,0,.35);backdrop-filter:blur(10px)
+        }
+        nav h2{color:var(--primary);font-size:1.4rem}
+        nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500;font-size:0.95rem}
+        header{
+            min-height:100vh;display:flex;align-items:center;justify-content:center;
+            text-align:center;padding:20px
+        }
+        header h1{font-size:clamp(2.2rem,6vw,3.5rem);margin-bottom:15px}
+        header span{color:var(--primary)}
+        header p{max-width:750px;margin:auto;margin-bottom:35px;font-size:1.1rem}
+        .btn{
+            padding:14px 34px;border-radius:40px;border:none;
+            background:linear-gradient(to right,var(--secondary),var(--primary));
+            color:#fff;font-size:1rem;cursor:pointer
+        }
+        section{padding:90px 8%}
+        h2.section-title{text-align:center;font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:50px}
+        .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+        .card{
+            background:rgba(255,255,255,.08);backdrop-filter:blur(12px);
+            border-radius:22px;padding:30px;text-align:center
+        }
+        .card h3{color:var(--primary);margin-bottom:12px}
+        .autor{
+            display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:40px;text-align:center
+        }
+        .autor img{
+            width:240px;height:240px;border-radius:50%;object-fit:cover;
+            border:8px solid var(--primary);padding:6px
+        }
+        .badge{
+            display:inline-block;padding:6px 18px;border-radius:20px;
+            background:rgba(94,203,255,.15);color:var(--primary);
+            font-size:.85rem;margin-bottom:12px
+        }
+        footer{text-align:center;padding:30px;background:rgba(0,0,0,.35)}
+
+        /* RESPONSIVE EXTRA */
+        @media (max-width:768px){
+            nav{flex-direction:column;gap:8px}
+            section{padding:70px 6%}
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Gemini IA</h2>
+    <div>
+        <a href="#curso">Curso</a>
+        <a href="#autor">Autora</a>
+    </div>
+</nav>
+
+<header>
+    <div>
+        <h1>Curso de <span>Gemini IA</span></h1>
+        <p>Proyecto académico sobre el uso correcto de la inteligencia artificial Gemini aplicado al aprendizaje y la tecnología.</p>
+        <button class="btn" onclick="document.getElementById('curso').scrollIntoView({behavior:'smooth'})">Ver contenido</button>
+    </div>
+</header>
+
+<section id="curso">
+    <h2 class="section-title">Contenido del Curso</h2>
+    <div class="cards">
+        <div class="card"><h3>¿Qué es Gemini?</h3><p>Introducción a la inteligencia artificial de Google.</p></div>
+        <div class="card"><h3>Prompts Correctos</h3><p>Cómo hacer preguntas claras y efectivas.</p></div>
+        <div class="card"><h3>Uso Académico</h3><p>Apoyo en estudios y aprendizaje responsable.</p></div>
+        <div class="card"><h3>Ética Digital</h3><p>Uso responsable de la inteligencia artificial.</p></div>
+    </div>
+</section>
+
+<section id="autor">
+    <h2 class="section-title">Autora del Proyecto</h2>
+    <div class="autor">
+        <img src="olga_soraya.jpeg" alt="Foto de Palacios Tuarez Olga Soraya">
+        <div>
+            <span class="badge">Proyecto Académico</span>
+            <h3>Palacios Tuarez Olga Soraya</h3>
+            <p>Este proyecto fue desarrollado como parte de un curso práctico sobre el uso correcto de la inteligencia artificial Gemini, aplicando diseño web moderno y herramientas digitales educativas.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Tecnología Utilizada</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="gemini_logo.png" width="140" alt="Logo Gemini"><h3>Gemini IA</h3>
+            <p>Inteligencia artificial utilizada como base del aprendizaje.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 · Proyecto académico</p>
+</footer>
+
+</body>
+</html>
